@@ -1,0 +1,13 @@
+period,author_gender,protagonist_gender,n_books,pooled_standardization_weight,analysis_filter
+Pre-1840,Female,Female,24,0.38496071829405165,protagonist_analysis_status == included
+Pre-1840,Female,Male,14,0.6150392817059483,protagonist_analysis_status == included
+Pre-1840,Male,Female,6,0.38496071829405165,protagonist_analysis_status == included
+Pre-1840,Male,Male,29,0.6150392817059483,protagonist_analysis_status == included
+1840–1899,Female,Female,94,0.38496071829405165,protagonist_analysis_status == included
+1840–1899,Female,Male,36,0.6150392817059483,protagonist_analysis_status == included
+1840–1899,Male,Female,58,0.38496071829405165,protagonist_analysis_status == included
+1840–1899,Male,Male,182,0.6150392817059483,protagonist_analysis_status == included
+1900+,Female,Female,87,0.38496071829405165,protagonist_analysis_status == included
+1900+,Female,Male,39,0.6150392817059483,protagonist_analysis_status == included
+1900+,Male,Female,74,0.38496071829405165,protagonist_analysis_status == included
+1900+,Male,Male,248,0.6150392817059483,protagonist_analysis_status == included

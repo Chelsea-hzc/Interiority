@@ -1,0 +1,11 @@
+estimate_type,protagonist_gender,period_or_contrast,estimate,ci_lower,ci_upper,n_books,n_female_authors,n_male_authors,book_counts,interpretation_scope
+direct_contrast,Female,Pre-1840: female − male author,0.03333333333333344,-0.04791666666666661,0.11042708333333355,30,24,6,female author=24; male author=6,primary
+direct_contrast,Female,1840–1899: female − male author,0.10327830765468349,0.047295212765957384,0.15923019075568587,152,94,58,female author=94; male author=58,primary
+direct_contrast,Female,1900+: female − male author,0.030040275385102566,-0.027241731543455616,0.08508792883792884,161,87,74,female author=87; male author=74,extension
+historical_change,Female,1840–1899 author gap − Pre-1840 author gap,0.06994497432135005,-0.026654469307898887,0.16783704756664228,182,118,64,female author=118; male author=64,primary
+historical_change,Female,1900+ author gap − 1840–1899 author gap,-0.07323803226958092,-0.1523073640321439,0.00578147788620991,313,181,132,female author=181; male author=132,extension
+direct_contrast,Male,Pre-1840: female − male author,0.14325123152709374,-0.044730295566502605,0.3201305418719213,43,14,29,female author=14; male author=29,primary
+direct_contrast,Male,1840–1899: female − male author,0.2067612942612943,0.1511740689865688,0.26327014652014646,218,36,182,female author=36; male author=182,primary
+direct_contrast,Male,1900+: female − male author,0.05112054164473534,-0.02452406979221476,0.1273528006491715,287,39,248,female author=39; male author=248,extension
+historical_change,Male,1840–1899 author gap − Pre-1840 author gap,0.06351006273420057,-0.12365313565744607,0.25683065449875836,261,50,211,female author=50; male author=211,primary
+historical_change,Male,1900+ author gap − 1840–1899 author gap,-0.15564075261655896,-0.2537648439150451,-0.05989031723205094,505,75,430,female author=75; male author=430,extension

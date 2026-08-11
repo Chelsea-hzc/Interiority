@@ -1,0 +1,24 @@
+time_period,books,books_with_score,average_interiority,group_column,group_label
+1840-1899,190,190,1.172842105263158,is_domestic,Domestic
+1900+,258,258,1.1950109623365437,is_domestic,Domestic
+<1840,19,19,1.3105263157894735,is_domestic,Domestic
+1840-1899,49,49,1.0385714285714285,is_detective_mystery,Detective / mystery
+1900+,163,163,0.9600613496932516,is_detective_mystery,Detective / mystery
+1840-1899,19,19,0.9800000000000001,is_science_fiction,Science fiction
+1900+,40,40,1.0024949494949493,is_science_fiction,Science fiction
+<1840,4,4,1.2275,is_science_fiction,Science fiction
+1840-1899,108,108,0.8937037037037037,is_adventure,Adventure
+1900+,123,123,0.9756910569105691,is_adventure,Adventure
+<1840,20,20,0.953,is_adventure,Adventure
+1840-1899,30,30,1.084,is_gothic,Gothic
+1900+,25,25,1.1912,is_gothic,Gothic
+<1840,21,21,1.2876190476190477,is_gothic,Gothic
+1840-1899,75,75,1.0142666666666666,is_historical,Historical
+1900+,66,66,1.0284848484848483,is_historical,Historical
+<1840,23,23,0.9891304347826086,is_historical,Historical
+1840-1899,86,86,1.1131863138198341,is_canonical_author,Canonical author
+1900+,78,78,1.122051282051282,is_canonical_author,Canonical author
+<1840,54,54,1.2387037037037036,is_canonical_author,Canonical author
+1840-1899,95,95,1.0929473684210527,is_english_fiction_19c,"English fiction, 19th c."
+1900+,8,8,1.1225,is_english_fiction_19c,"English fiction, 19th c."
+<1840,9,9,1.1877777777777778,is_english_fiction_19c,"English fiction, 19th c."

@@ -1,0 +1,5 @@
+author_gender,author_gender_label,protagonist_gender,n_books,estimate,ci_low,ci_high,sample_status,ci_displayed,bootstrap_repetitions,bootstrap_seed
+female,Female author,F,205,1.2068626891284586,1.1832859023370796,1.2309814388629778,standard_n_ge_20,True,5000,20260731
+female,Female author,M,89,1.11123595505618,1.0640421348314608,1.1565168539325843,standard_n_ge_20,True,5000,20260731
+male,Male author,F,138,1.1282608695652172,1.0963043478260872,1.1606539855072464,standard_n_ge_20,True,5000,20260731
+male,Male author,M,459,0.984552936775159,0.9658813791509869,1.00281056204749,standard_n_ge_20,True,5000,20260731

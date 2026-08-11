@@ -1,0 +1,13 @@
+hypothesis,analysis_component,estimate_type,period_or_contrast,group,estimate,ci_lower,ci_upper,n_books,n_female,n_male,n_mixed,book_counts,adjustment,interpretation_scope
+H2,primary_protagonist_unadjusted,group_mean,Pre-1840,Protagonist: Female,1.3949999999999998,1.3546666666666665,1.4360083333333333,30,30.0,,,female=30,None; within-period equal-book mean,primary
+H2,primary_protagonist_domestic_standardized,adjusted_group_mean,Pre-1840,Protagonist: Female,1.3919591515452816,1.3525325006214268,1.4339104575772643,30,30.0,,,female=30,Fixed mix: non-domestic=0.655; domestic=0.345,primary
+H2,primary_protagonist_unadjusted,group_mean,Pre-1840,Protagonist: Male,1.0376744186046514,0.9558081395348836,1.117674418604651,43,,43.0,,male=43,None; within-period equal-book mean,primary
+H2,primary_protagonist_domestic_standardized,adjusted_group_mean,Pre-1840,Protagonist: Male,0.9804376966588457,0.9017087380185883,1.0593706825994433,43,,43.0,,male=43,Fixed mix: non-domestic=0.655; domestic=0.345,primary
+H2,primary_protagonist_unadjusted,group_mean,1840–1899,Protagonist: Female,1.147623525899388,1.120844155844156,1.1753393976712945,154,154.0,,,female=154,None; within-period equal-book mean,primary
+H2,primary_protagonist_domestic_standardized,adjusted_group_mean,1840–1899,Protagonist: Female,1.1272072292288886,1.0960626564771745,1.1595847526190117,154,154.0,,,female=154,Fixed mix: non-domestic=0.655; domestic=0.345,primary
+H2,primary_protagonist_unadjusted,group_mean,1840–1899,Protagonist: Male,0.9861643835616437,0.958675799086758,1.0145239726027397,219,,219.0,,male=219,None; within-period equal-book mean,primary
+H2,primary_protagonist_domestic_standardized,adjusted_group_mean,1840–1899,Protagonist: Male,1.0032649325934866,0.9774682938838211,1.0296392165682697,219,,219.0,,male=219,Fixed mix: non-domestic=0.655; domestic=0.345,primary
+H2,primary_protagonist_unadjusted,group_mean,1900+,Protagonist: Female,1.158165606684125,1.1311887548322734,1.185389372116224,162,162.0,,,female=162,None; within-period equal-book mean,extension
+H2,primary_protagonist_domestic_standardized,adjusted_group_mean,1900+,Protagonist: Female,1.1023815045355647,1.0726872700099728,1.1321638775392715,162,162.0,,,female=162,Fixed mix: non-domestic=0.655; domestic=0.345,extension
+H2,primary_protagonist_unadjusted,group_mean,1900+,Protagonist: Male,1.014808989549474,0.9919377162629759,1.037198096885813,289,,289.0,,male=289,None; within-period equal-book mean,extension
+H2,primary_protagonist_domestic_standardized,adjusted_group_mean,1900+,Protagonist: Male,1.029202080239111,1.0082987245382724,1.0503664344282801,289,,289.0,,male=289,Fixed mix: non-domestic=0.655; domestic=0.345,extension

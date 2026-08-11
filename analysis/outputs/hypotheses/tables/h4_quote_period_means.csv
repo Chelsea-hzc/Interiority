@@ -1,0 +1,4 @@
+hypothesis,estimate_type,period_or_contrast,group,estimate,ci_lower,ci_upper,n_books,n_domestic,n_non_domestic,book_counts,interpretation_scope
+H4,group_mean,Pre-1840,Domestic books,0.03565324788138885,-0.09714847911691367,0.15697584470190676,17,17,,domestic=17,primary
+H4,group_mean,1840–1899,Domestic books,0.20609051660763913,0.17138102462886334,0.23958843339868943,187,187,,domestic=187,primary
+H4,group_mean,1900+,Domestic books,0.22984260848013602,0.1965504320982628,0.2633867485005313,242,242,,domestic=242,extension

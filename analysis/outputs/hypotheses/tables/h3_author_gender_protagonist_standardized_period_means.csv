@@ -1,0 +1,13 @@
+estimate_type,period,author_gender,estimate,ci_lower,ci_upper,n_books,n_female_protagonist,n_male_protagonist,adjustment
+unadjusted_group_mean,Pre-1840,Female,1.3031578947368418,1.2228881578947364,1.377631578947368,38,24,14,None; protagonist_analysis_status == included
+protagonist_gender_standardized_mean,Pre-1840,Female,1.2372168777724335,1.1369296586900755,1.33749283008658,38,24,14,Fixed mix: female protagonist=0.385; male protagonist=0.615
+unadjusted_group_mean,Pre-1840,Male,1.0557142857142858,0.9717142857142856,1.142292857142857,35,6,29,None; protagonist_analysis_status == included
+protagonist_gender_standardized_mean,Pre-1840,Male,1.1362797192873821,1.0810406959118648,1.1978338380613285,35,6,29,Fixed mix: female protagonist=0.385; male protagonist=0.615
+unadjusted_group_mean,1840–1899,Female,1.1816463306808132,1.1543065428824049,1.2084028293545532,130,94,36,None; protagonist_analysis_status == included
+protagonist_gender_standardized_mean,1840–1899,Female,1.1716542347105374,1.1390166256255665,1.2041487417722232,130,94,36,Fixed mix: female protagonist=0.385; male protagonist=0.615
+unadjusted_group_mean,1840–1899,Male,0.9856666666666667,0.9594989583333333,1.0125854166666666,240,58,182,None; protagonist_analysis_status == included
+protagonist_gender_standardized_mean,1840–1899,Male,1.0047298253045378,0.9791964741835432,1.030056623346853,240,58,182,Fixed mix: female protagonist=0.385; male protagonist=0.615
+unadjusted_group_mean,1900+,Female,1.1362922879589543,1.1030383197049867,1.1698432539682542,126,87,39,None; protagonist_analysis_status == included
+protagonist_gender_standardized_mean,1900+,Female,1.101514100939775,1.0545381430906315,1.1458100671032092,126,87,39,Fixed mix: female protagonist=0.385; male protagonist=0.615
+unadjusted_group_mean,1900+,Male,1.037577012359621,1.0158378819248384,1.0596888292866553,322,74,248,None; protagonist_analysis_status == included
+protagonist_gender_standardized_mean,1900+,Male,1.058508633736178,1.0359239616491298,1.0806020517392299,322,74,248,Fixed mix: female protagonist=0.385; male protagonist=0.615

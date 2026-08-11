@@ -1,0 +1,10 @@
+analysis,period_or_contrast,estimate,ci_lower,ci_upper,n_books,book_counts
+Domestic narration-minus-quotation gap,Pre-1840,0.025085431627916963,-0.12119065470466868,0.15707348745945926,13,domestic books=13
+Domestic narration-minus-quotation gap,1840–1899,0.20894945855407535,0.17142557150098114,0.24745529408007574,152,domestic books=152
+Domestic narration-minus-quotation gap,1900+,0.22482460664810142,0.18779658754923872,0.26149455283157735,207,domestic books=207
+Non-domestic narration-minus-quotation gap,Pre-1840,-0.027568479489335343,-0.09652985878206627,0.03993126909622185,50,all non-domestic books=50
+Non-domestic narration-minus-quotation gap,1840–1899,-0.00034872108481880906,-0.03371003280894164,0.033057986883282514,237,all non-domestic books=237
+Non-domestic narration-minus-quotation gap,1900+,0.12602057400398686,0.09611352682438604,0.15603553956073482,270,all non-domestic books=270
+Domestic-minus-non-domestic contrast,Pre-1840: domestic − non-domestic,0.0526539111172523,-0.10655475970150588,0.20548030149002308,63,domestic=13; non-domestic=50
+Domestic-minus-non-domestic contrast,1840–1899: domestic − non-domestic,0.20929817963889416,0.15980476001599014,0.2600898387301679,389,domestic=152; non-domestic=237
+Domestic-minus-non-domestic contrast,1900+: domestic − non-domestic,0.09880403264411455,0.05177732583713842,0.14457168842287324,477,domestic=207; non-domestic=270

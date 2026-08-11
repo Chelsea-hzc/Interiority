@@ -1,15 +1,20 @@
-# Sampled-passage inference runner
+# Gemini inference on prepared corpus passages
 
-`run_inference.py` is separate from the annotated evaluation CLI. It reads
-`final_sample_29books.csv`, creates a compact `llm_input.csv`, sends only the
-`text` field to the existing full-codebook prompt, and writes inference outputs
-without gold-label metrics.
+`run_inference.py` is separate from the annotated evaluation CLI. It accepts a
+prepared passage-level corpus CSV, creates a compact `llm_input.csv`, sends only
+the `text` field to the existing full-codebook prompt, and writes inference
+outputs without human gold labels or gold-label metrics.
+
+The prepared input must contain `gutenberg_id`, `title`, `passage_id`, `text`,
+`n_words`, `position_bin`, `normalized_position`, `is_base_sample`, and
+`is_core_extra`. The runner can process any prepared corpus CSV with this
+schema; corpus sampling and passage preparation happen upstream.
 
 ## Prepare and validate files without API calls
 
 ```bash
 python run_inference.py \
-  --data final_sample_29books.csv \
+  --data prepared_passages.csv \
   --output-dir inference_results \
   --model gemini-3.5-flash \
   --prepare-only
@@ -24,7 +29,7 @@ for a fresh run.
 ```bash
 export GEMINI_API_KEY="your-api-key"
 python run_inference.py \
-  --data final_sample_29books.csv \
+  --data prepared_passages.csv \
   --output-dir inference_results \
   --model gemini-3.5-flash \
   --backend developer \
@@ -39,7 +44,7 @@ Resume an interrupted run with the command printed in `run_config.json`, or:
 
 ```bash
 python run_inference.py \
-  --data final_sample_29books.csv \
+  --data prepared_passages.csv \
   --output-dir inference_results \
   --model gemini-3.5-flash \
   --backend developer \
@@ -77,7 +82,7 @@ model, and prompt configuration:
 
 ```bash
 python run_inference.py \
-  --data final_sample_29books.csv \
+  --data prepared_passages.csv \
   --output-dir inference_results_vertex \
   --model gemini-3.5-flash \
   --backend vertex \
