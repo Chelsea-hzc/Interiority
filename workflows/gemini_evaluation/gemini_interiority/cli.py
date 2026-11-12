@@ -12,9 +12,13 @@ from .io_utils import ensure_dirs, load_annotations
 from .runners import EvaluationRunner
 
 
+REPOSITORY_ROOT = Path(__file__).resolve().parents[3]
+DEFAULT_DATA_PATH = REPOSITORY_ROOT / "data" / "annotation" / "df_annotation_final.csv"
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Run Gemini-only interiority diagnostics and zero-shot tests.")
-    parser.add_argument("--data", type=Path, default=Path("df_annotation_final.csv"), help="Annotation CSV path.")
+    parser.add_argument("--data", type=Path, default=DEFAULT_DATA_PATH, help="Annotation CSV path.")
     parser.add_argument("--output-dir", type=Path, default=Path("results/local_gemini"), help="Output folder.")
     parser.add_argument("--models", nargs="+", required=True, help="Gemini model names/IDs to evaluate.")
     parser.add_argument(

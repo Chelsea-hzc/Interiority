@@ -11,6 +11,8 @@ usage, and run configuration to local CSV/JSON/JSONL files.
 
 ## Setup
 
+Run the commands below from `workflows/gemini_evaluation/`.
+
 ```bash
 python -m venv .venv
 source .venv/bin/activate
@@ -26,7 +28,7 @@ You must provide:
   - `--backend vertex` with Google Cloud credentials, `--project`, and `--location`
 - At least one model name with `--models`
 
-The default data file is `df_annotation_final.csv`. If your data file has a different path, pass it with `--data`.
+The canonical annotation data is `data/annotation/df_annotation_final.csv` at the repository root. The CLI resolves that file automatically by default; if your data file has a different path, pass it with `--data`.
 
 The input CSV must include these columns:
 
@@ -53,7 +55,7 @@ Then run with:
 
 ```bash
 python -m gemini_interiority.cli \
-  --data df_annotation_final.csv \
+  --data ../../data/annotation/df_annotation_final.csv \
   --output-dir results/local_gemini \
   --models gemini-3.5-flash \
   --backend developer
@@ -71,7 +73,7 @@ Then run with:
 
 ```bash
 python -m gemini_interiority.cli \
-  --data df_annotation_final.csv \
+  --data ../../data/annotation/df_annotation_final.csv \
   --output-dir results/local_gemini \
   --models gemini-3.5-flash \
   --backend vertex \
@@ -87,7 +89,7 @@ Run diagnostics and final zero-shot. Both run by default:
 
 ```bash
 python -m gemini_interiority.cli \
-  --data df_annotation_final.csv \
+  --data ../../data/annotation/df_annotation_final.csv \
   --output-dir results/local_gemini \
   --models gemini-3.5-flash \
   --backend developer
@@ -97,7 +99,7 @@ Run only the held-out test split and skip diagnostics:
 
 ```bash
 python -m gemini_interiority.cli \
-  --data df_annotation_final.csv \
+  --data ../../data/annotation/df_annotation_final.csv \
   --output-dir results/local_gemini_test_only \
   --models gemini-3-flash-preview \
   --backend developer \
@@ -108,7 +110,7 @@ Compare one model across multiple thinking levels in a single run:
 
 ```bash
 python -m gemini_interiority.cli \
-  --data df_annotation_final.csv \
+  --data ../../data/annotation/df_annotation_final.csv \
   --output-dir results/gemini-3.5-flash-thinking-comparison \
   --models gemini-3.5-flash \
   --thinking-levels minimal low medium high \
@@ -127,7 +129,7 @@ Resume an interrupted final run from its per-row checkpoint:
 
 ```bash
 python -m gemini_interiority.cli \
-  --data df_annotation_final.csv \
+  --data ../../data/annotation/df_annotation_final.csv \
   --output-dir results/gemini-3.5-flash-thinking-comparison \
   --models gemini-3.5-flash \
   --thinking-levels minimal low medium high \
@@ -145,7 +147,7 @@ uses the first `--pilot-n` test rows:
 
 ```bash
 python -m gemini_interiority.cli \
-  --data df_annotation_final.csv \
+  --data ../../data/annotation/df_annotation_final.csv \
   --output-dir results/local_gemini_pilot \
   --models gemini-3.5-flash \
   --backend developer \
@@ -157,7 +159,7 @@ For preview/pro models with low requests-per-minute limits, add a delay between 
 
 ```bash
 python -m gemini_interiority.cli \
-  --data df_annotation_final.csv \
+  --data ../../data/annotation/df_annotation_final.csv \
   --output-dir results/local_gemini_pro_pilot \
   --models gemini-3.1-pro-preview \
   --backend developer \
@@ -195,7 +197,7 @@ prints a resume command.
 
 These options have defaults but can be changed:
 
-- `--data`: input CSV path. Default: `df_annotation_final.csv`
+- `--data`: input CSV path. Default: repository `data/annotation/df_annotation_final.csv`
 - `--output-dir`: output folder. Default: `results/local_gemini`
 - `--run`: evaluation group to run: `all`, `diagnostics`, or `final`. Default: `all`
 - `--backend`: `developer` or `vertex`. Default: `developer`

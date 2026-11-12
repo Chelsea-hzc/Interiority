@@ -10,11 +10,15 @@ from pathlib import Path
 from .inference import InferenceRunner, compact_input, sha256_file
 
 
+REPOSITORY_ROOT = Path(__file__).resolve().parents[3]
+DEFAULT_DATA_PATH = REPOSITORY_ROOT / "data" / "frozen" / "corpus_inference" / "llm_input_armstrong.csv"
+
+
 def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="Run inference-only Gemini interiority classification on sampled novel passages."
     )
-    parser.add_argument("--data", type=Path, default=Path("final_sample_29books.csv"))
+    parser.add_argument("--data", type=Path, default=DEFAULT_DATA_PATH)
     parser.add_argument("--output-dir", type=Path, default=Path("inference_results"))
     parser.add_argument("--model", default="gemini-3.5-flash")
     parser.add_argument("--backend", choices=["developer", "vertex"], default="developer")

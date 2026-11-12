@@ -1,15 +1,24 @@
-# Sampled-passage inference runner
+# Corpus-passage inference runner
 
-`run_inference.py` is separate from the annotated evaluation CLI. It reads
-`final_sample_29books.csv`, creates a compact `llm_input.csv`, sends only the
-`text` field to the existing full-codebook prompt, and writes inference outputs
-without gold-label metrics.
+`run_inference.py` is separate from the annotated evaluation CLI. It accepts a
+prepared passage-level corpus CSV, creates a compact runtime `llm_input.csv`,
+sends only the `text` field to the existing full-codebook prompt, and writes
+inference outputs without gold-label metrics.
+
+The checked-in default input,
+`data/frozen/corpus_inference/llm_input_armstrong.csv`, contains only the 29-book
+Armstrong/core subset. The corresponding frozen predictions are
+`data/frozen/corpus_inference/passage_predictions_armstrong.csv`. Neither file
+represents the complete 1,348-book corpus. Pass `--data` with another prepared
+passage-level CSV to run the same pipeline on a different corpus.
+
+Run the commands below from `workflows/gemini_inference/`.
 
 ## Prepare and validate files without API calls
 
 ```bash
 python run_inference.py \
-  --data final_sample_29books.csv \
+  --data ../../data/frozen/corpus_inference/llm_input_armstrong.csv \
   --output-dir inference_results \
   --model gemini-3.5-flash \
   --prepare-only
@@ -24,7 +33,7 @@ for a fresh run.
 ```bash
 export GEMINI_API_KEY="your-api-key"
 python run_inference.py \
-  --data final_sample_29books.csv \
+  --data ../../data/frozen/corpus_inference/llm_input_armstrong.csv \
   --output-dir inference_results \
   --model gemini-3.5-flash \
   --backend developer \
@@ -39,7 +48,7 @@ Resume an interrupted run with the command printed in `run_config.json`, or:
 
 ```bash
 python run_inference.py \
-  --data final_sample_29books.csv \
+  --data ../../data/frozen/corpus_inference/llm_input_armstrong.csv \
   --output-dir inference_results \
   --model gemini-3.5-flash \
   --backend developer \
@@ -77,7 +86,7 @@ model, and prompt configuration:
 
 ```bash
 python run_inference.py \
-  --data final_sample_29books.csv \
+  --data ../../data/frozen/corpus_inference/llm_input_armstrong.csv \
   --output-dir inference_results_vertex \
   --model gemini-3.5-flash \
   --backend vertex \
@@ -91,9 +100,9 @@ The command automatically runs the pilot before starting full inference. Add
 
 ## Outputs
 
-The output directory contains:
+The runtime output directory contains:
 
-- `llm_input.csv`
+- `llm_input.csv` (a generated compact copy for that run, distinct from the committed frozen Armstrong input)
 - `checkpoint.jsonl`
 - `passage_predictions.csv`
 - `book_summary.csv`
