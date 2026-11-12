@@ -1,7 +1,7 @@
 time_period,books,books_with_score,average_interiority,group_column,group_label
-1840-1899,191,191,1.1730366492146598,is_domestic,Domestic
+1840-1899,190,190,1.172842105263158,is_domestic,Domestic
 1900+,258,258,1.1950109623365437,is_domestic,Domestic
-<1840,21,21,1.325238095238095,is_domestic,Domestic
+<1840,19,19,1.3105263157894735,is_domestic,Domestic
 1840-1899,49,49,1.0385714285714285,is_detective_mystery,Detective / mystery
 1900+,163,163,0.9600613496932516,is_detective_mystery,Detective / mystery
 1840-1899,19,19,0.9800000000000001,is_science_fiction,Science fiction
