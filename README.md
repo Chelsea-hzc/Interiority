@@ -167,6 +167,8 @@ The supervised encoder evaluation includes BERT, RoBERTa, DistilBERT, and Modern
 
 The prompted model evaluation compares several model families. Gemini 3.5 Flash with minimal thinking achieved the strongest final macro F1 in the reported comparison and was selected for large scale corpus annotation.
 
+The complete human-readable classification prompt and codebook is available at [`resources/full_interiority_prompt.md`](resources/full_interiority_prompt.md).
+
 Historical model evaluation notebooks are included for transparency, but rerunning all model evaluations is not required to reproduce the paper’s downstream statistical analyses.
 
 ## Gemini workflows
