@@ -1,0 +1,7 @@
+hypothesis,estimate_type,period_or_contrast,group,estimate,ci_lower,ci_upper,n_books,n_domestic,n_non_domestic,book_counts,interpretation_scope
+H4,group_mean,Pre-1840,Domestic books,0.05444292336889126,-0.08262870758335066,0.1781191436022668,15,15.0,,domestic books=15,primary
+H4,group_mean,1840–1899,Domestic books,0.20788389586644698,0.17094530522011853,0.24525244376002717,153,153.0,,domestic books=153,primary
+H4,group_mean,1900+,Domestic books,0.22482460664810142,0.1886873542790141,0.2611939727103493,207,207.0,,domestic books=207,extension
+H4,group_mean,Pre-1840,All non-domestic books,-0.03893660862160866,-0.11047147101349919,0.03213369706693448,48,,48.0,all non-domestic books=48,primary
+H4,group_mean,1840–1899,All non-domestic books,-0.0005447680696991382,-0.03315661869688657,0.03047049822255123,236,,236.0,all non-domestic books=236,primary
+H4,group_mean,1900+,All non-domestic books,0.12602057400398686,0.09611352682438604,0.15603553956073482,270,,270.0,all non-domestic books=270,extension

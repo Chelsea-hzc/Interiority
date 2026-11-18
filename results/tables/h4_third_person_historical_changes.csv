@@ -1,0 +1,5 @@
+hypothesis,estimate_type,period_or_contrast,group,estimate,ci_lower,ci_upper,n_books,n_domestic,n_non_domestic,book_counts,interpretation_scope
+H4,historical_change,1840–1899 mean − Pre-1840 mean,Domestic books,0.15344097249755573,0.025211286586779968,0.2904907775257979,168,168.0,,Pre-1840=15; 1840–1899=153,primary
+H4,historical_change,1900+ mean − 1840–1899 mean,Domestic books,0.016940710781654433,-0.03386531800042308,0.0679177502484288,360,360.0,,1840–1899=153; 1900+=207,extension
+H4,historical_change,1840–1899 mean − Pre-1840 mean,All non-domestic books,0.03839184055190952,-0.03955747253967754,0.11780211547401043,284,,284.0,Pre-1840=48; 1840–1899=236,primary
+H4,historical_change,1900+ mean − 1840–1899 mean,All non-domestic books,0.126565342073686,0.08272036006384259,0.17091394926005812,506,,506.0,1840–1899=236; 1900+=270,extension

@@ -1,0 +1,6 @@
+estimate_type,period_or_contrast,estimate,ci_lower,ci_upper,n_domestic,n_non_domestic,book_counts,interpretation_scope
+direct_contrast,Pre-1840: domestic − non-domestic,0.204556277056277,0.09222903138528137,0.3053727002164501,21,88,domestic=21; non-domestic=88,primary
+direct_contrast,1840–1899: domestic − non-domestic,0.16162836705437011,0.13057826606850018,0.1932851769231212,191,365,domestic=191; non-domestic=365,primary
+direct_contrast,1900+: domestic − non-domestic,0.1969173200311367,0.16912653101926686,0.2243299496561601,258,425,domestic=258; non-domestic=425,extension
+historical_change,1840–1899 gap − Pre-1840 gap,-0.04292791000190688,-0.1491732439830674,0.07589141908514067,212,453,"Pre-1840: D=21, ND=88; 1840–1899: D=191, ND=365",primary
+historical_change,1900+ gap − 1840–1899 gap,0.0352889529767666,-0.007407255825133498,0.07577812614554927,449,790,"1840–1899: D=191, ND=365; 1900+: D=258, ND=425",extension
